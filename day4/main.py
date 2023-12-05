@@ -9,13 +9,11 @@ with open('input.txt', 'r') as f:
         my_num = set(my_num.split())
         win_num = set(win_num.split())
         card_res = 0
-        print(f"Card {card} winning numbers: {my_num.intersection(win_num)}")
         for win in range(len(my_num.intersection(win_num))):
             if card_res == 0:
                 card_res = 1
             else:
                 card_res *=2
-            print(f"Score is {card_res}")
         res += card_res
 print(f"Result is {res}")
 
