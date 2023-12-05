@@ -29,6 +29,7 @@ with open('input.txt', 'r') as f:
 
 print("\n\n")
 res = 0
+# add the number of copies of each card we have to get the result
 for c in cards_list:
     res += c
 print(f"Result is {res}")
